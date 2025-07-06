@@ -108,28 +108,28 @@ export function CreativeFooter() {
             </p>
 
             {/* Business Status */}
-            <div className="flex items-center gap-2 p-3 bg-white/50 rounded-lg border border-wood-200">
+            {/* <div className="flex items-center gap-2 p-3 bg-white/50 rounded-lg border border-wood-200">
               <div className={`w-3 h-3 rounded-full ${isOpen ? "bg-green-500 animate-pulse-soft" : "bg-red-500"}`} />
               <span className="text-sm font-medium text-wood-700">{isOpen ? "🟢 Sedang Buka" : "🔴 Tutup"}</span>
               <Clock className="h-4 w-4 text-wood-500 ml-auto" />
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
           <div className={`space-y-6 ${isVisible ? "animate-fade-in-up" : ""}`} style={{ animationDelay: "200ms" }}>
             <h4 className="font-playfair font-semibold text-lg text-wood-800 flex items-center gap-2">
-              🔗 Quick Links
+            Quick Links
             </h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-wood-600 hover:text-wood-800 transition-all duration-300 hover:translate-x-2 flex items-center gap-2 group relative"
+                    className="text-wood-600 hover:text-wood-800 transition-all duration-300 hover:translate-x-2 hover:scale-105 flex items-center gap-2 group relative"
                   >
-                    <span className="w-1.5 h-1.5 bg-wood-400 rounded-full group-hover:bg-wood-600 transition-colors duration-300"></span>
+                    {/* <span className="w-1.5 h-1.5 bg-wood-400 rounded-full group-hover:bg-wood-600 transition-colors duration-300"></span> */}
                     {link.labelKey ? t(link.labelKey) : link.label}
-                    <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-wood-600 transition-all duration-300 group-hover:w-full"></span>
+                    {/* <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-wood-600 transition-all duration-300 group-hover:w-full"></span> */}
                   </Link>
                 </li>
               ))}
@@ -145,7 +145,7 @@ export function CreativeFooter() {
               <div className="flex items-start gap-3 group">
                 <MapPin className="h-5 w-5 text-wood-500 mt-0.5 group-hover:text-wood-700 transition-colors duration-300" />
                 <div className="text-sm text-wood-600 group-hover:text-wood-800 transition-colors duration-300">
-                  <div className="font-medium">📍 Alamat</div>
+                  <div className="font-medium">Alamat</div>
                   <div>Jl. Kerajinan Kayu No. 123</div>
                   <div>Jakarta Timur 13450</div>
                 </div>
@@ -154,7 +154,7 @@ export function CreativeFooter() {
               <div className="flex items-center gap-3 group">
                 <Phone className="h-5 w-5 text-wood-500 group-hover:text-wood-700 transition-colors duration-300" />
                 <div className="text-sm text-wood-600 group-hover:text-wood-800 transition-colors duration-300">
-                  <div className="font-medium">📱 Telepon</div>
+                  <div className="font-medium">Telepon</div>
                   <div>+62 812-3456-7890</div>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export function CreativeFooter() {
               <div className="flex items-center gap-3 group">
                 <Mail className="h-5 w-5 text-wood-500 group-hover:text-wood-700 transition-colors duration-300" />
                 <div className="text-sm text-wood-600 group-hover:text-wood-800 transition-colors duration-300">
-                  <div className="font-medium">✉️ Email</div>
+                  <div className="font-medium">Email</div>
                   <div>info@kayuceria.com</div>
                 </div>
               </div>
@@ -171,7 +171,7 @@ export function CreativeFooter() {
 
           {/* Social & Language */}
           <div className={`space-y-6 ${isVisible ? "animate-fade-in-up" : ""}`} style={{ animationDelay: "400ms" }}>
-            <h4 className="font-playfair font-semibold text-lg text-wood-800 flex items-center gap-2">🌟 Ikuti Kami</h4>
+            <h4 className="font-playfair font-semibold text-lg text-wood-800 flex items-center gap-2">Ikuti Kami</h4>
 
             {/* Social Links */}
             <div className="flex gap-4">
@@ -190,7 +190,7 @@ export function CreativeFooter() {
 
             {/* Language Toggle */}
             <div className="space-y-3">
-              <div className="text-sm font-medium text-wood-700 flex items-center gap-2">🌍 Bahasa</div>
+              <div className="text-sm font-medium text-wood-700 flex items-center gap-2">Bahasa</div>
               <LanguageToggle />
             </div>
 
@@ -199,7 +199,7 @@ export function CreativeFooter() {
               onClick={handleWhatsApp}
               className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 group"
             >
-              <MessageCircle className="h-5 w-5 group-hover:animate-bounce-gentle" />💬 Chat WhatsApp
+              <MessageCircle className="h-5 w-5 group-hover:animate-bounce-gentle" />Chat WhatsApp
             </button>
 
             {/* Rating Display */}

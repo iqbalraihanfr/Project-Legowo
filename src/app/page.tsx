@@ -296,7 +296,7 @@ export default function HomePage() {
       </section>
 
       {/* Business Hours */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -345,7 +345,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ */}
       <section className="py-16 bg-wood-50">
