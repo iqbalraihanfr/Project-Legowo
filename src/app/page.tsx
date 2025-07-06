@@ -183,7 +183,7 @@ export default function HomePage() {
       <section className="py-16 bg-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-wood-800 mb-4">{t("featured.title")}</h2>
+            <h2 className="text-3xl md:text-4xl font-mochiyPopOne font-bold text-wood-800 mb-4">{t("featured.title")}</h2>
             <p className="text-lg text-wood-600 max-w-2xl mx-auto">{t("featured.subtitle")}</p>
           </div>
 
@@ -205,7 +205,7 @@ export default function HomePage() {
       <section className="py-16 bg-wood-50">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-wood-800 mb-4">{t("categories.title")}</h2>
+            <h2 className="text-3xl md:text-4xl font-mochiyPopOne font-bold text-wood-800 mb-4">{t("categories.title")}</h2>
             <p className="text-lg text-wood-600 max-w-2xl mx-auto">{t("categories.subtitle")}</p>
           </div>
 

@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Playfair_Display } from "next/font/google"
+import { Inter, Playfair_Display, Mochiy_Pop_One } from "next/font/google"
 import "./globals.css"
 import { LanguageProvider } from "@/lib/i18n"
 import { Header } from "@/components/header"
@@ -19,6 +19,12 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 })
 
+const mochiyPopOne = Mochiy_Pop_One({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-mochiy-pop-one",
+})
+
 export const metadata: Metadata = {
   title: "Kayu Ceria - Mainan Kayu Edukatif Berkualitas",
   description:
@@ -33,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="id" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="id" className={`${inter.variable} ${playfair.variable} ${mochiyPopOne.variable} `}>
       <body className="min-h-screen bg-cream">
         <LanguageProvider>
           <SEOHead />
